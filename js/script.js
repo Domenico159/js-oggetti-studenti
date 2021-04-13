@@ -89,7 +89,6 @@ console.log('************************* Esercizio successivo ********************
 
     ] ;
 
-
     // Ciclare gli studenti e stanparli
 
     for( var i = 0; i < studenti.length;i++){
@@ -104,7 +103,46 @@ console.log('************************* Esercizio successivo ********************
 
     }
 
+
+    
+
     console.log('************************* Esercizio successivo *************************');
+
+
+    // Parte 3
+
+    var nomeUser = prompt('Inserisci il tuo nome') ;
+
+    var cognomeUser = prompt('Inserisci il tuo cognome') ;
+
+    var etàUser = parseInt( prompt('Inserisci la tua età') ) ;
+
+    studenti.push(
+        {
+            nome : nomeUser,
+
+            cognome: cognomeUser,
+
+            età: etàUser,
+        }
+    )
+
+
+    // Ciclare gli studenti e stanparli
+
+    for( var i = 0; i < studenti.length;i++){
+
+        var studente = studenti[i];
+
+        var nomeStudente = studente.nome ;
+
+        var cognomeStudente = studente.cognome;
+
+        var etàStudente = studente.età;
+
+        console.log( 'Nome = ' + nomeStudente + '   Cognome = ' + cognomeStudente + '  Età = ' + etàStudente);
+
+    }
 
 
 
